@@ -1,22 +1,48 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import IndexView from '../views/IndexView.vue'
+import LoginView from '../views/LoginView.vue'
+import RegisterView from '../views/RegisterView.vue'
 import HomeView from '../views/HomeView.vue'
+import AboutView from '../views/aboutView.vue'
+import PageNotFoundView from '@/views/PageNotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/', //by default index page
+      name: 'index',
+      component: IndexView
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: LoginView
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: RegisterView
+    },
+    {
+      path: '/home',
       name: 'home',
       component: HomeView
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+      component: AboutView
+    },
+    {
+      path: "/:pathMatch(.*)*", // wrong url redirect to page not found
+      redirect:"page-not-found"
+    },  
+    {
+      path: '/page-not-found',
+      name: 'page-not-found',
+      component: PageNotFoundView
+    } 
   ]
 })
 

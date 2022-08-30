@@ -3,5 +3,5 @@
 </script>
 
 <template>
- <h1 class="text-success">Tracker</h1>
+ <h1 class="text-success">Tracker HOme</h1>
 </template>
