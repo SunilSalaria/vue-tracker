@@ -22,7 +22,8 @@
 - Setup Tracker Project and install bootstrapVue. - Done.
 - Clear Default project structure and clean project. - Done.
 - Logo and color pattle. - done
-- Routing Home, Login, Register
+- Routing Home, Login, Register - done
+- create index page
 - Create Login page UI.
 - Create Sign In page UI.
 - Create DB using JSON Server.
