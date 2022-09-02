@@ -56,8 +56,8 @@
                             </div>
                             <div class="text-center">
                                 <div class="text-muted">Don't you have an account?</div>
-                                <a href="#" class="text-decoration-none text-dark">Sign Up</a>
-                            </div>
+                                <router-link class="text-decoration-none text-dark" to="/register">Sign Up</router-link>         
+                              </div>
                         </form>
                     </div>
                 </div>

@@ -14,12 +14,10 @@
                         </div>
                         <div>
                             <div class="d-grid mb-3">
-                                <button type="button"
-                                    class="btn btn-light text-primary shadow-lg btn-lg rounded-0">Register an
-                                    Account</button>
+                            <router-link class="btn btn-light text-primary shadow-lg btn-lg rounded-0" to="/register">Register an Account</router-link>   
                             </div>
                             <div class="text-muted">Already a member?</div>
-                            <a href="#" class="text-decoration-none text-white">Sign In</a>
+                            <router-link class="text-decoration-none text-white" to="/login">Sign In</router-link>         
                         </div>
                     </div>
                 </div>
