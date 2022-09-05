@@ -4,6 +4,7 @@ import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/aboutView.vue'
+import ForgotPasswordView from '../views/ForgotPasswordView.vue'
 import PageNotFoundView from '@/views/PageNotFoundView.vue'
 
 const router = createRouter({
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: AboutView
+    },
+    {
+      path: '/forgot-password',
+      name: 'forgot-password',
+      component: ForgotPasswordView
     },
     {
       path: "/:pathMatch(.*)*", // wrong url redirect to page not found

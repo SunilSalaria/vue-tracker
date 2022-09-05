@@ -42,7 +42,7 @@
                                 <input type="password" class="form-control form-control-lg rounded-0 shadow-sm px-5"
                                     placeholder="******" id="passwordInput" />
                                 <div class="mt-1 text-end">
-                                    <a href="#" class="text-decoration-none mt-3 text-dark">Forgot Password?</a>
+                                <router-link class="text-decoration-none mt-3 text-dark" to="/forgot-password">Forgot Password?</router-link>
                                 </div>
                             </div>
                             <div class="mb-4 form-check">
