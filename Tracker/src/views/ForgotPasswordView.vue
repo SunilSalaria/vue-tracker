@@ -5,10 +5,9 @@
                 <div class="card shadow-sm rounded-0">
                     <div class="card-body p-4 p-md-5 mx-md-4">
                         <div class="mb-5">
-                            <div class="display-6 mb-2 text-primary">Sign In</div>
+                            <div class="display-6 mb-2 text-primary">Forgot Password :(</div>
                             <p class="text-muted">
-                                To keep connected with us please login with your email address
-                                and password. We will not share your information with others.
+                                Enter the email address associated with your account and we'll send you a link to reset your password.
                             </p>
                         </div>
                         <form>
