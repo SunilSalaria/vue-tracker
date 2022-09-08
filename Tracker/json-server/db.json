@@ -2,13 +2,11 @@
   "user": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-server",
-      "author": "author singh"
+      "name": "Sunil",     
+      "email": "Sunilsalaria1993@gmail.com",
+      "phone": "8968594268",
+      "position": "Frontend Developer",
+      "password": "sunil123"
     }
   ]
 }

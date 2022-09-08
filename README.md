@@ -15,6 +15,7 @@
 - npm install -g json-server --> install json server.
 - json-server --watch db.json --> start json server.
 - http://localhost:3000/ --> Port URL for json server.
+- http://localhost:3000/user --> use this api endpoint for crud.
 
 ## === Typography === ##
 # Primary:- 
