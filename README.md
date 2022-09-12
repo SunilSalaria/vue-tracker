@@ -5,6 +5,7 @@
 - https://getbootstrap.com/ -> that's why I'm using bootstrap5.2 version of bootstrap with Sass.
 - https://www.youtube.com/watch?v=h18hbBNxXac&list=PL8p2I9GklV45e7L_qC_mntM7FhSIV8pqa --> Youtube tutorial reference.
 - https://www.npmjs.com/package/json-server#getting-started --> Json Server installation setup URL reference.
+- https://jasonwatmore.com/post/2020/07/23/vue-axios-http-post-request-examples --> for curd AXIOS
 ## Vue3 Commands:- 
 - npm run dev --> for run vue project.
 ## Sass compile:- 

@@ -2,11 +2,20 @@
   "user": [
     {
       "id": 1,
-      "name": "Sunil",     
+      "name": "Sunil",
       "email": "Sunilsalaria1993@gmail.com",
       "phone": "8968594268",
       "position": "Frontend Developer",
       "password": "sunil123"
+    },
+    {
+      "name": "Bunty",
+      "email": "Bunty@gmail.com",
+      "phone": "8968597589",
+      "position": "Team Lead",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 2
     }
   ]
 }

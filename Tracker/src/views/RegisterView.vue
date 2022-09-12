@@ -11,7 +11,7 @@
                                 We will not share your information with others.
                             </p>
                         </div>
-                        <form>
+                        <form @submit.prevent="onSubmit">
 
                             <div class="mb-4 position-relative">
                                 <!-- svg -->
@@ -102,7 +102,7 @@
                                     placeholder="Confirm Password" id="confirmPasswordInput" />
                             </div>
                             <div class="d-grid mb-4">
-                                <button type="submit" v-on:click="submitRegister()" class="btn btn-primary shadow-sm btn-lg rounded-0">
+                                <button v-on:click="signUp()" class="btn btn-primary shadow-sm btn-lg rounded-0">
                                     Sign Up
                                 </button>
                             </div>
@@ -119,6 +119,7 @@
 </template>
 
 <script>
+ import axios from "axios";
  export default{
      data(){
         return{
@@ -131,8 +132,15 @@
         }
      },
      methods:{
-         submitRegister(){
-            alert("this is submit register page alert");
+        async signUp(){            
+        let result = await axios.post("http://localhost:3000/user", {
+         name:this.name,
+         email:this.email,
+         phone:this.phone,
+         position:this.position,
+         password:this.password,
+         confirmPassword:this.confirmPassword
+        });        
         }
      }
  }
