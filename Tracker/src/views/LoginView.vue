@@ -4,6 +4,7 @@
             <div class="col-12 col-md-8 col-lg-4">
                 <div class="card shadow-sm rounded-0">
                     <div class="card-body p-4 p-md-5 mx-md-4">
+                        <div class="text-danger small">{{error}}</div>
                         <div class="mb-5">
                             <div class="display-6 mb-2 text-primary">Sign In</div>
                             <p class="text-muted">
@@ -11,7 +12,8 @@
                                 and password. We will not share your information with others.
                             </p>
                         </div>
-                        <form @submit.prevent="onSubmit">
+                        <form @submit.prevent="onSubmit">                         
+
                             <div class="mb-4 position-relative">
                                 <!-- svg -->
                                 <svg class="input-icon-start bi bi-person text-primary"
@@ -72,12 +74,12 @@
 
 <script>
 import axios from "axios";
-import { createRouter, createWebHistory } from 'vue-router'
 export default {
     data() {
         return {
             email: "",
             password: "",
+            error:""
 
         }
     },
@@ -88,7 +90,7 @@ export default {
                 this.$router.push({ name: 'home' });
             }
             else {
-                alert("email password not matched");
+                this.error = "Invalid Email & Password. Please try again :(";
             }
         },
 
