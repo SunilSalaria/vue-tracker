@@ -12,7 +12,7 @@
                                 and password. We will not share your information with others.
                             </p>
                         </div>
-                        <form @submit.prevent="onSubmit">                         
+                        <form @submit.prevent="onSubmit">
 
                             <div class="mb-4 position-relative">
                                 <!-- svg -->
@@ -79,7 +79,7 @@ export default {
         return {
             email: "",
             password: "",
-            error:""
+            error: ""
 
         }
     },

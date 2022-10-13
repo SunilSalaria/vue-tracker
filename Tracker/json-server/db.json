@@ -25,6 +25,24 @@
       "password": "123qwe",
       "confirmPassword": "123qwe",
       "id": 3
+    },
+    {
+      "name": "Test",
+      "email": "Testuser@gmail.com",
+      "phone": "9856895874",
+      "position": "Team Lead",
+      "password": "asdf123",
+      "confirmPassword": "asdf123",
+      "id": 4
+    },
+    {
+      "name": "Test",
+      "email": "Testuser@gmail.com",
+      "phone": "9856895874",
+      "position": "Team Lead",
+      "password": "asdf123",
+      "confirmPassword": "asdf123",
+      "id": 5
     }
   ]
 }
